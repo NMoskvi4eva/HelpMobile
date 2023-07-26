@@ -1,0 +1,962 @@
+/* monitors and laptops */
+@media (min-width: 1240px) and (max-width: 1440px)  {
+    .mob {
+        display: none;
+    }
+    .worth-item {
+        width: 20rem; 
+        height: 26rem;
+    }
+    .w-tag {
+        width: auto;
+        text-align: center;
+        margin-left: 1rem;
+    }
+    .worth-list {
+        justify-content: space-around;
+    }
+    .w-img {
+        width: 20rem;
+        height: 15rem;
+        
+    }
+    .main {
+        background-repeat: repeat-y;
+    }
+    .d-title {
+        padding: 3rem;
+    }
+}
+
+/* tablet */
+@media (min-width: 1024px) and (max-width: 1239px)  {
+    .mob {
+        display: none;
+    }
+    .header {
+        height: 5rem;
+        
+    }
+    
+    .logo {
+        width: 5rem;
+        height: 5rem;
+    }
+    .tagline {
+        font-size: 0.6rem;
+        margin-top: 0.2rem;
+    }
+    .menu {
+        font-size: 1rem;
+    }
+    .call-button {
+        display: flex;
+        width: 10rem;
+        height: 4rem;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+    }
+    .hero {
+        height: max-content;
+    }
+    .name-hero {
+        font-size: 3rem;
+    }
+    .hero-wrapper {
+        font-size: 1.5rem;
+    }
+    .robot {
+        width: 20rem;
+        height: 26rem;
+    }
+    .robot>img {
+        width: inherit;
+        height: inherit;
+    }
+    .worth-title {
+        padding: 2rem 0 2rem 0;
+    }
+    .worth-list {
+        justify-content: space-between;
+    }
+    .worth-item {
+        width: 18rem;
+        height: 24rem;
+        margin-bottom: 0;
+    }
+    .w-img {
+        width: inherit;
+    }
+    .w-tag {
+        margin-left: 0;
+    }
+    .description {
+        height: 30rem;
+        background-size:18%;
+    }
+    .d-title {
+        padding: 1.5rem;
+        padding-top: 3rem;
+        font-size: 2rem;
+    }
+    .description-text {
+        font-size: 1.5rem;
+        margin-top: 1%;
+    }
+    .t-cell {
+        height: 2rem;
+    }
+    /*-----------------------------------------new page----------------------------------------*/
+    .about {
+        padding-top: 1.5rem;
+        padding-bottom: 3%;
+        background-image: none;
+    }
+    .description-text {
+        margin-bottom: 0;
+    }
+    .dignity {
+        padding-top: 0;
+    }
+    .worth-title {
+        padding-top: 0;
+    }
+    .dign {
+        height: max-content;
+    }
+    .dignity-img {
+        width: 29rem;
+        height: 100%;
+    }
+    .dignity-text {
+        font-size: 1.2rem;
+        width: 50%;
+        margin: auto;
+    }
+    .descr {
+        padding: 1rem;
+        height: max-content;
+    }
+    .call {
+        margin-bottom: 2rem;
+    }
+    /*-------------------------------------------new page---------------------------------------*/
+    .cards {
+        margin-left: 1rem;
+    }
+    .card {
+        width: 20rem;
+        height: 20rem;
+        font-size: 1.5rem;
+    }
+    .card-img {
+        width: inherit;
+        height: 10rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .card-name {
+        margin: 1rem auto;
+        height: 4rem;
+    }
+    .prise {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .w-title {
+        width: 80%;
+        text-align: center;
+    }
+    .d-title {
+        padding-top: 1.5rem;
+    }
+    .c-address {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        height: max-content;
+    }
+    .tagline {
+        padding-top: 0.4rem;
+    }
+    .menu-wrapper>a {
+        display: none;
+        width: 12rem;
+        height: 4rem;
+    }
+    .site-bar {
+        display: block;
+    }
+    .menu-btn {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        color: var(--main-color);
+        padding-right: 3rem;
+    }
+    
+    .menu-btn span {
+        width: 3rem;
+        height: 0.1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--green-hover);
+        transition: all 0.5s;
+        
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    
+    /* Меню, которое будет появляться */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0s; 
+    }
+    
+    .menu.active {
+        color: var(--text-footer);
+        width: 20%;
+        height: max-content;
+        right: 0;
+        FONT-VARIANT: JIS04;
+        background-color: rgba(15, 15, 15, 0.7);
+        line-height: 2;
+    }
+    
+    .menu.active.menu-item:hover {
+        color: var(--green-hover);
+    }
+    .hero {
+        height: max-content;
+    }
+    .hero-wrapper {
+        font-size: 1.5rem;
+    }
+    .robot>img {
+        width: 20rem;
+        height: 30rem;
+    }
+    .worth-title {
+        padding: 1rem;
+    }
+    .d-title {
+        width: 80%;
+        padding: 0;
+        font-size: 2rem;
+    }
+    .description-text {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .description {
+        background-image: none;
+        height: max-content;
+        padding-bottom: 2rem;
+    }
+    .footer {
+        height: max-content;
+    }
+    .worth-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .worth-item {
+        width: 15rem;
+        height: 22rem;
+        margin-bottom: 0;
+    }
+    .w-img {
+        width: 15rem;
+        height: 14rem;
+    }
+    .w-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .w-tag {
+        font-size: 1rem;
+        width: 14rem;
+        text-align: center;
+        margin: auto;
+    }
+    .call {
+        margin-bottom: 0;
+    }
+    .main {
+        height: max-content;
+    }
+    /* ---------new page-------------------------------------------------------------------------------*/
+    .about {
+        padding-top: 1.5rem;
+        padding-bottom: 3%;
+    }
+    .description-text {
+        margin-bottom: 0;
+    }
+    .dignity {
+        padding-top: 0;
+    }
+    .worth-title {
+        padding-top: 0;
+    }
+    .dign {
+        height: max-content;
+    }
+    .dignity-img {
+        width: 29rem;
+        height: 100%;
+    }
+    .dignity-text {
+        font-size: 1.2rem;
+        width: 20rem;
+    }
+    .descr {
+        padding: 1rem;
+        height: max-content;
+    }
+    .call {
+        margin-bottom: 2rem;
+    }
+    /*------------------new page--------------------------------------------------------------------------*/
+    .d-title {
+        margin: auto;
+        padding: 2rem;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        padding-bottom: 4rem;
+        margin: auto;
+    }
+    .card {
+        width: 20rem;
+        height: 30rem;
+        font-size: 1.5rem;
+        background-color: var(--text-footer);
+        border-radius: 1rem;
+        height: 25rem;
+    }
+    .card-img {
+        height: 10;
+    }
+    .card-name {
+        margin: 1rem auto;
+        height: 2rem;
+    }
+    .prise {
+        margin-bottom: 1.5rem;
+    }
+    /*----------------------new page-----------------------------*/
+    .c-title {
+        width: 40rem;
+        text-align: center;
+    }
+    .c-address {
+        width: 45rem;
+        text-align: center;
+    }
+}
+
+/* mobile */
+@media (min-width: 480px) and (max-width: 767px) {
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        height: max-content;
+    }
+    .tagline {
+        padding-top: 0.4rem
+    }
+    .menu-wrapper>a {
+        display: none;
+        width: 12rem;
+        height: 4rem;
+    }
+    .site-bar {
+        display: block;
+    }
+    .menu-btn {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        color: var(--main-color);
+        padding-right: 3rem;
+    }
+    
+    .menu-btn span {
+        width: 3rem;
+        height: 0.1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--green-hover);
+        transition: all 0.5s;
+        
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    
+    /* Меню, которое будет появляться */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0s; 
+    }
+    
+    .menu.active {
+        color: var(--text-footer);
+        width: 30%;
+        height: max-content;
+        right: 0;
+        FONT-VARIANT: JIS04;
+        background-color: rgba(8, 8, 8, 0.8);
+        line-height: 1.5;
+    }
+    
+    .menu.active:hover {
+        color: var(--green-hover);
+    }
+    .robot {
+        display: none;
+    }
+    .hero {
+        font-size: 1.5rem;
+        height: max-content;
+    }
+    .name-hero {
+        font-size: 2.5rem;
+    }
+    .tag {
+        font-size: 1.5rem;
+    }
+    .hero-text {
+        font-size: 1.5rem;
+    }
+    .worth {
+        width: 100%;
+    }
+    .worth.worth-title {
+        height: 2rem;
+        padding: 1rem;
+    }
+    .worth-list {
+        display: block;
+        margin: 0;
+    }
+    .worth-item {
+        width: 25rem;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    .w-img {
+        width: inherit;
+    }
+    .description {
+        background-image: none;
+        height: max-content;
+        padding-bottom: 1.5rem;
+    }
+    .d-title {
+        width: 20rem;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .description-text {
+        width: 25rem;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .call-button {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    /*----------------------------new page------------------*/
+    .dignity {
+        padding-top: 0.5rem;
+    }
+    .worth-title {
+        width: 90%;
+        padding: 1.5rem 0;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .dign {
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        display: block;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .dignity-img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 3rem 3rem 0 0;
+        order: 1;
+    }
+    .dignity-text {
+        width: 20rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        order: 2;
+    }
+    .img-right {
+        width: 27rem;
+        border-radius: 3rem 3rem 0 0;
+        order: 1;
+    }
+    .description {
+        padding: 1rem;
+    }
+    .description-text {
+        font-size: 1rem;
+        margin-top: 1%;
+    }
+    .footer-wrapper {
+        padding: 0.5rem;
+        display: block;
+    }
+    /*---------------------------------new page----------------------------*/
+    .s-table {
+        width: 30rem;
+    }
+    .t-line {
+        height: 2rem;
+    }
+    .t-cell {
+        font-size: 1rem;
+        height: 2rem;
+    }
+    /*-----------------------------------new page--------------------------------*/
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0.5em;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        width: 20rem;
+        height: 25rem;
+        margin: auto;
+        font-size: 1rem;
+        background-color: var(--text-footer);
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .card-img {
+        width: 20rem;
+    }
+    .card-name {
+        height: 2rem;
+        margin: 1.5rem auto;
+    }
+
+    /*------------------------------------new page----------------------------------*/
+    .c-title {
+        width: 25rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .c-address {
+        width: 25rem;
+        margin-top: 1rem;
+    }
+    .map {
+        display: none;
+    }
+    .mini-map {
+        display: block;
+        width: max-content;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .w-title {
+        font-size: 1.5rem;
+
+    }
+    .contact-list {
+        font-size: 1rem;
+
+    }
+    .d-title {
+        padding-bottom: 1.5rem;
+    }
+    .socio {
+        margin: 1.5rem;
+    }
+}
+@media (min-width: 360px) and (max-width: 479px)  {
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        height: max-content;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .tagline {
+        font-size: 0.7rem;
+        padding-top: 0.2rem;
+    }
+    .menu-wrapper>a {
+        display: none;
+        width: 12rem;
+        height: 4rem;
+    }
+    .site-bar {
+        display: block;
+    }
+    .menu-btn {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        color: var(--main-color);
+        padding-right: 3rem;
+    }
+    
+    .menu-btn span {
+        width: 3rem;
+        height: 0.1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--green-hover);
+        transition: all 0.5s;
+        
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    
+    /* Меню, которое будет появляться */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0s; 
+    }
+    
+    .menu.active {
+        color: var(--text-footer);
+        width: 40%;
+        height: max-content;
+        right: 0;
+        FONT-VARIANT: JIS04;
+        background-color: rgba(5, 5, 5, 0.8);
+        line-height: 1.5;
+    }
+    
+    .menu.active.menu-item:hover {
+        color: var(--green-hover);
+    }
+    .robot {
+        display: none;
+    }
+    .hero {
+        font-size: 1.5rem;
+        height: max-content;
+        padding-left: 0.8rem;
+    }
+    .name-hero {
+        font-size: 2.5rem;
+    }
+    .tag {
+        font-size: 1.5rem;
+    }
+    .hero-text {
+        font-size: 1.5rem;
+    }
+    .worth {
+        width: 100%;
+    }
+    .worth-title {
+        height: 2rem;
+        padding: 1rem;
+        width: 20rem;
+        text-align: center;
+    }
+    .worth-list {
+        display: block;
+        padding: 0;
+    }
+    .worth-item {
+        width: 20.25rem;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    .w-img {
+        width: inherit;
+    }
+    .w-tag {
+        width: 15rem;
+        margin: auto;
+        text-align: center;
+    }
+    .description {
+        background-image: none;
+        height: max-content;
+        padding-bottom: 1.5rem;
+    }
+    .d-title {
+        width: 20rem;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .description-text {
+        width: 20rem;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .call-button {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    /*----------------------------new page------------------*/
+    .dignity {
+        padding-top: 0.5rem;
+    }
+    .about {
+        background-image: none;
+    }
+    .worth-title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        height: 3rem;
+    }
+    .dign {
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        display: block;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .dignity-img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 1rem 1rem 0 0;
+        order: 1;
+    }
+    .dignity-text {
+        width: 20rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        order: 2;
+    }
+    .img-right {
+        width: 20.25rem;
+        border-radius: 1rem 1rem 0 0;
+        order: 1;
+    }
+    .description {
+        padding: 1rem;
+    }
+    .description-text {
+        font-size: 1rem;
+        margin-top: 1%;
+    }
+    .footer-wrapper {
+        padding: 0.5rem;
+        display: block;
+    }
+    /*---------------------------------new page----------------------------*/
+    .s-table {
+        width: 30rem;
+    }
+    .t-line {
+        height: 2rem;
+    }
+    .t-cell {
+        font-size: 1rem;
+        height: 2rem;
+    }
+    /*-----------------------------------new page--------------------------------*/
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0.5em;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        width: 20rem;
+        height: 25rem;
+        margin: auto;
+        font-size: 1rem;
+        background-color: var(--text-footer);
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .card-img {
+        width: 20rem;
+    }
+    .card-name {
+        height: 2rem;
+        margin: 1.5rem auto;
+    }
+
+
+    /*------------------------------------new page----------------------------------*/
+    .c-title {
+        width: 20rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .c-address {
+        width: 20rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .map {
+        display: none;
+    }
+    .mini-map {
+        display: block;
+        width: max-content;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .w-title {
+        font-size: 1.5rem;
+
+    }
+    .contact-list {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .contact-item {
+        width: 20rem;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    .d-title {
+        padding-bottom: 1.5rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .strit {
+        margin-bottom: 1.5rem;
+    }
+    .socio {
+        margin: 1.5rem;
+    }
+
+}
