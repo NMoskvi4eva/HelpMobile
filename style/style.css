@@ -31,10 +31,18 @@ a:visited {
   background-color: var(--text-footer);
 }
 /* Logo*/
+@font-face {
+  font-family: Missiondanger;
+  src: url(../fonts/missiondanger3d.ttf);
+}
 .logo {
   display: flex;
 }
+.logo-img {
+  max-width: 5rem;
+}
 .name {
+  font-family: Missiondanger;
   display: flex;
   color: var(--main-color);
   font-size: 2rem;
