@@ -177,6 +177,10 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .logo-img {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
     .desk {
         display: none;
     }
@@ -402,6 +406,10 @@
 
 /* mobile */
 @media (min-width: 480px) and (max-width: 767px) {
+    .logo-img {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
     .desk {
         display: none;
     }
@@ -667,6 +675,10 @@
     }
 }
 @media (min-width: 360px) and (max-width: 479px)  {
+    .logo-img {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
     .desk {
         display: none;
     }
